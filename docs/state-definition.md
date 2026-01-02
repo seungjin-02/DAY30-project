@@ -32,3 +32,8 @@
 
 이 상태는 자신의 상태 값(DEGRADED)과
 그 지속 여부만을 표출한다.
+
+### Transition related responsibilities (전이 관련 책임)
+
+이 state는 전이를 정의하지 않으며,
+전이의 필요성, 적절성, 시점을 판단하지 않는다.
