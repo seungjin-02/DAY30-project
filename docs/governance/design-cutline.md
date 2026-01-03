@@ -12,6 +12,8 @@
 조용히 이전되는 것을 방지하기 위한
 설계적 선택이다.
 
+---
+
 ## Separation of transition responsibilities (전이 책임 분리)
 
 - 전이는 state의 결과로 발생하지 않는다.
