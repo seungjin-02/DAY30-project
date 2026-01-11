@@ -1,1 +1,6 @@
-
+{
+  "rules": [],
+  "transitions": [],
+  "failure_conditions": [],
+  "human_required_default": true
+}
