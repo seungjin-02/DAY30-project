@@ -1,14 +1,21 @@
-# DAY30-project
+# DAY30-project + Day30-Stabilization Phase
 AI judgment boundary &amp; state-based decision system
 
+이 시스템은 AI가 판단하거나 결정을 수행하지 않는다.
+
+본 프로젝트는 자동화의 범위나 모델의 성능을 향상을 목표로 하지 않으며, AI가 개입할 수 없는 판단과 책임의 경계를 설계적으로 명시,고정하기 위해 구성된 판단 책임 분리 기반 자동화 보조 시스템이다.
+
 ## What This System is
-- 본 시스템은 AI가 결정을 내리지 않도록 설계된, 판단 책임 분리 기반의 자동화 보조 시스템이다.
-- 자동화는 규칙 평가까지만 수행되며, 판단과 책임은 항상 인간에게 귀속된다.
+- Automation: 규칙을 평가한다.
+- AI: 요약·정리·가시화만 수행한다.
+- Judgment & Responsibility: 항상 인간에게 귀속된다.
 
 ---
 
 ## Design Principles
-이 프로젝트의 모든 동작은 아래 문서들을 절대 기준으로 한다.
+이 프로젝트의 모든 동작과 해석은 아래 문서들을 절대 기준으로 한다.
+
+본 README는 이 문서들을 요약하거나 대체하지 않으며, 이 기준을 우회하는 해석은 허용되지 않는다.
 - `governance/decision-boundary.md`
 - `governance/transition-rules.md`
 - `governance/design-cutline.md`
@@ -19,6 +26,7 @@ AI judgment boundary &amp; state-based decision system
 ---
 
 ## What This System Intentionally Does Not Do
+아래 항목들은 설계 철학이 아니라 본 시스템이 갖지 않기로 명시적으로 선택한 권한의 목록이다.
 - 판단을 자동화하지 않는다. (시스템은 조건을 평가할 수 있으나, 선택·결정·책임을 수행하지 않는다.)
 - 상태나 결과를 원인으로 해석하지 않는다. (상태는 관측 결과이며, 전이는 규칙의 결과로만 발생한다.)
 - 반복, 성공률, 일관성을 자동화 확장의 근거로 사용하지 않는다. (잘 작동한다는 사실은 권한을 확장할 이유가 아니다.)
@@ -29,5 +37,10 @@ AI judgment boundary &amp; state-based decision system
 ---
 
 ## Why This Matters
-- 자동화의 확장은 성능 문제가 아니라 책임과 경계의 문제이기 때문이다.
-- 본 시스템은 더 많은 자동화를 지향하지 않으며, 멈춰야 할 지점을 명확히 설명할 수 있도록 설계되었다.
+자동화 시스템에서 문제는 성능이나 정확도가 아니라 판단과 책임이 어디에서 발생하는지가 명시적으로 정의되지 않는다는 점이다.
+
+책임의 귀속이 불분명한 자동화는 오류 발생 시 대응 주체를 흐리게 만들고 결과적으로 시스템 신뢰도를 훼손한다.
+
+본 시스템은 더 많은 자동화를 목표로 하지 않는다.
+
+대신 자동화를 중단해야 하는 지점을 설계 수준에서 명확히 고정하는 데 초점을 둔다.
