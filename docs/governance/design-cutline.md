@@ -1,6 +1,6 @@
 # Design Cutline
 
-## Intentional Non-Implementation (의도적 비구현)
+## Intentional Non-Implementation
 본 시스템은 DEGRADED 상태에서 추가 추론, 보조 판단, 추천 알고리즘을 구현하지 않는다.
 
 본 시스템은 판단 정확도 향상을 위한 자동화 확장을 구현하지 않는다.
@@ -9,14 +9,14 @@
 
 ---
 
-## Separation of transition responsibilities (전이 책임 분리)
+## Separation of transition responsibilities
 - 전이는 state의 결과로 발생하지 않는다.
 - 전이는 decision의 판단으로 발생하지 않는다. 
 - 전이는 사전에 정의된 규칙 계층에서만 발생한다.
 
 상태 정의와 전이 발생은 분리된다.
 
-## Transition Rule Principles (전이 규칙 원칙)
+## Transition Rule Principles
 - 규칙은 판단하지 않는다.
 - 규칙은 목적을 가지지 않는다.
 - 규칙은 인간 행위를 전이의 원인으로 삼지 않는다.
