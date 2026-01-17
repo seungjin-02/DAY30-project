@@ -1,6 +1,19 @@
 {
-  "rules": [],
-  "transitions": [],
-  "failure_conditions": [],
+  "transitions": [
+    {
+      "id": "T_TIME_EXCEEDED",
+      "observables": ["state_duration"],
+      "conditions": {
+        "exists": "state_duration',
+        "window": "PT10M"
+      }
+    }
+  ],
+  "failure_conditions": [
+    {
+      "type": "AMBIGUITY",
+      "ambiguous_when": "multiple_rules_match"
+    }
+  ],
   "human_required_default": true
 }
