@@ -4,7 +4,7 @@
       "id": "T_TIME_EXCEEDED",
       "observables": ["state_duration"],
       "conditions": {
-        "exists": "state_duration',
+        "exists": "state_duration",
         "window": "PT10M"
       }
     }
