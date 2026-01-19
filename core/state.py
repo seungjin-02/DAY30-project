@@ -1,2 +1,2 @@
-# Responsibility: 관측된 상태 값을 정의하고 보관한다
+# Responsibility: 관측된 상태 값을 보관한다
 Class State: ...
