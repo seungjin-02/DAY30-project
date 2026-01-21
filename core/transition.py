@@ -1,2 +1,3 @@
 # Responsibility: 단일 전이 결과를 적용한다
-def apply_transition(rule_result): ...
+def apply_transition(rule_result):
+  return rule_result.candidate
