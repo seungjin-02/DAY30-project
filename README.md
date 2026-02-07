@@ -14,8 +14,6 @@ AI judgment boundary &amp; state-based decision system
 
 ## Design Principles
 이 프로젝트의 모든 동작과 해석은 아래 문서들을 절대 기준으로 한다.
-
-본 README는 이 문서들을 요약하거나 대체하지 않으며, 이 기준을 우회하는 해석은 허용되지 않는다.
 - `governance/decision-boundary.md`
 - `governance/transition-rules.md`
 - `governance/design-cutline.md`
